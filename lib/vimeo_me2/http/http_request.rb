@@ -110,6 +110,7 @@ module VimeoMe2
               raise RequestFailed.new(call.code, call.msg)
             else
               body = JSON.parse(call.response.body)
+              puts body
               raise RequestFailed.new(call.code, call.msg, body['error'], @ratelimit)
             end
           end
