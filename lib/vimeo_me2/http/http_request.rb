@@ -117,7 +117,7 @@ module VimeoMe2
         end
 
         def log(str)
-          puts str if @debug
+          puts str 
         end
     end
   end
